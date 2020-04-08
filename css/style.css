@@ -2,7 +2,7 @@ html {
   background: #018ded
     url(https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
   background-size: cover;
-  font-family: "helvetica neue";
+  font-family: "Black Ops One", cursive;
   text-align: center;
   font-size: 10px;
 }
@@ -38,7 +38,7 @@ body {
   transform: translateY(-3px); /* account for the height of the clock hands */
 }
 
-.hand {
+/* .hand {
   width: 50%;
   height: 6px;
   background: black;
@@ -48,17 +48,45 @@ body {
   transform: rotate(90deg);
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.03, 1.71, 0.58, 1);
-}
-/* 
-.hand .hour-hand {
+} */
+
+.hour-hand {
   width: 50%;
   height: 6px;
+  background: blueviolet;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.03, 1.71, 0.58, 1);
+}
+
+.minute-hand {
+  width: 50%;
+  height: 6px;
+  background: pink;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.03, 1.71, 0.58, 1);
+}
+.second-hand {
+  width: 50%;
+  height: 1px;
   background: #fff;
   position: absolute;
   top: 50%;
-} */
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.03, 1.71, 0.58, 1);
+}
 
 .time {
+  font-family: "Black Ops One", cursive;
   font-size: 5rem;
   font-weight: bolder;
   color: #fff;
