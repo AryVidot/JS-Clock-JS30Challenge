@@ -1,5 +1,6 @@
 html {
-  background: #018ded url(http://unsplash.it/1500/1000?image=881&blur=5);
+  background: #018ded
+    url(https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
   background-size: cover;
   font-family: "helvetica neue";
   text-align: center;
@@ -10,17 +11,20 @@ body {
   margin: 0;
   font-size: 2rem;
   display: flex;
-  flex: 1;
   min-height: 100vh;
   align-items: center;
 }
-
+.clock-ctnr {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
 .clock {
   width: 30rem;
   height: 30rem;
-  border: 20px solid white;
-  border-radius: 50%;
-  margin: 50px auto;
+  border: 2rem solid white;
+  border-radius: 30%;
+  margin: 5rem auto;
   position: relative;
   padding: 2rem;
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
@@ -40,4 +44,22 @@ body {
   background: black;
   position: absolute;
   top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.03, 1.71, 0.58, 1);
+}
+/* 
+.hand .hour-hand {
+  width: 50%;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+} */
+
+.time {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #fff;
 }
