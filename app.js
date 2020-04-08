@@ -42,4 +42,5 @@ function setDate() {
 // console.log(setdate);
 setInterval(setDate, 1000);
 
-// Second hand movement
+/* Improve hands movement going backward when passing the 12 O'clock - movement going backward
+- solution: remove temporarely - "transition: all 0.05s;" in CSS - enter if statement. */
